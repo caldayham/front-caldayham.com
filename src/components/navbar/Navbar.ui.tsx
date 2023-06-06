@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import React from 'react';
 import pageLinks from "@/data/pageLinks";
@@ -14,6 +16,11 @@ export default function Navbar() {
           </div>
         ))}
       </div>
+
+      <button onClick={() => {
+        console.log('signing out');
+      }}>
+        Sign Out</button>
     </div>
   )
 }
