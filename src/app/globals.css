@@ -18,5 +18,16 @@ a {
 }
 
 .container {
-  background-color: #222;
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button, 
+input {
+    font-family: inherit;
 }

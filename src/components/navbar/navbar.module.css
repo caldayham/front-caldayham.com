@@ -1,0 +1,47 @@
+.container {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: all 0.2s ease;
+}
+.logo:hover {
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+.link:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.actionLink {
+    padding: 2px 20px;
+    background-color: #bbb;
+    border-radius: 2px;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: none;
+}
+.actionLink:hover {
+    background-color: #fff;
+}
