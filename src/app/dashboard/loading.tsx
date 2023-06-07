@@ -1,6 +1,6 @@
 export default function LoadingPage() {
     return (
-        <div>
+        <div className="pageContainer">
             <h1>Loading...</h1>
         </div>
     );

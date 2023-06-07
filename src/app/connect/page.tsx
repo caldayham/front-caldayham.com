@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 export default function ConnectPage() {
     return (
-      <div className={styles.container}>
+      <div className='pageContainer'>
         <h1>connect with Cal!</h1>
         <p>to connect with cal (via email, phone, or any other supported message) you must first submit something you find interesting.</p>
         <p>steps: fill out the form below, only links are accepted, and then explain in less that 200 words why this object you have linked to is interesting to you.</p>

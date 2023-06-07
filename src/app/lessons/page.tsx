@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 export default function LessonsPage() {
     return (
-      <div className={styles.container}>
+      <div className='pageContainer'>
         <h1>Lessons</h1>
         <p></p>
       </div>

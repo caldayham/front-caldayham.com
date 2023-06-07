@@ -3,6 +3,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #333;
+    padding: 0 20px;
+
+    zIndex: 100;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    background-color: #111;
+}
+/* Styles for viewports wider than 1024px */
+@media screen and (min-width: 1064px) {
+    .container {
+        /* Assuming .navbar is a direct child of .container */
+        width: 1022px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Styles for viewports narrower than 1024px */
+@media screen and (max-width: 1063px) {
+    .container {
+        /* Set the width of the navbar to 100% of the viewport width */
+        width: calc(100% - 42px);
+    }
 }
 
 .logo {
