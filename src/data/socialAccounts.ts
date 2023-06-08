@@ -2,6 +2,12 @@ import { SocialAccount } from "@/models/socialAccount.model";
 
 const socialAccounts:SocialAccount[] = [
     {
+        id: 0,
+        platform: 'github',
+        iconPath: '/icons/github.png',
+        link: 'https://github.com/caldayham',
+    },
+    {
         id: 1,
         platform: 'linkedin',
         iconPath: '/icons/linkedin.png',

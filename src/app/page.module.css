@@ -1,2 +1,7 @@
 .container {
 }
+
+.mainSection {
+    display: flex;
+    justify-content: space-between;
+}
