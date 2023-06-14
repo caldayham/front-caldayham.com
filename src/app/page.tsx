@@ -8,12 +8,12 @@ export default function LandingPage() {
     <>
       <div className={styles.openingContent}>
         <div className={styles.item}>
-          <h1>Hello, my name is Cal.</h1>
-          <h1 style={{ marginBottom: '2rem' }}>Welcome to my site.</h1>
+          <h1 className={styles.introTitle}>Hello,&nbsp;<span className={styles.break}> </span>my name is Cal.</h1>
+          <h1 style={{ margin: '2rem 0rem 2rem 0rem' }}>Welcome! ヽ(‘ ∇‘ )ノ</h1>
           <p>The primary directive of this site is to serve as the primary source of information on myself, Cal!</p>
           <p>The main unit of information on this site are posts, essentially text and image documentation of any object that relates to myself and I want to make public.</p>
         </div>
-        <div className={styles.item}>
+        <div className={styles.imgItem}>
           <Image src='/images/2022-snapper-zoom.jpg' alt='cal x snapping turtle' width={200} height={320} className={styles.img} />
         </div>
       </div>
