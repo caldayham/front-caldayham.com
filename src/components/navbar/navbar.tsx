@@ -1,29 +1,37 @@
 'use client';
 
-import React from 'react';
-import pageLinks from "@/data/pageLinks";
-import styles from './navbar.module.css';
-import ActiveLink from '@/components/activeLink/ActiveLink';
-
+import React, { useState, useEffect } from 'react';
+import MobilepNavbar from './mobileNavbar/mobileNavbar';
+import DeskTopNavbar from './deskTopNavbar/deskTopNavbar';
 
 export default function Navbar() {
+  const [isMobile, setIsMobile] = useState(false);  // state to hold window size info
+
+  // function to check window size and update state accordingly
+  const checkWindowSize = () => {
+    if (window.innerWidth < 640) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  // useEffect to listen to window resize event
+  useEffect(() => {
+    checkWindowSize();
+    window.addEventListener("resize", checkWindowSize);
+
+    // cleanup function to remove event listener when component unmounts
+    return () => window.removeEventListener("resize", checkWindowSize);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <MobilepNavbar />
+    );
+  }
+
   return (
-    <nav className={styles.container}>
-      <ActiveLink href="/">
-        <div className={styles.logo}>caldayham</div>
-      </ActiveLink>
-
-      <div className={styles.links}>
-        {pageLinks.map((pageLink) => (
-          <ActiveLink href={pageLink.path} key={pageLink.id}>
-            <div className={styles.link}>{pageLink.title}</div>
-          </ActiveLink>
-        ))}
-
-        <ActiveLink href="/connect">
-          <div className={styles.actionLink}>Connect</div>
-        </ActiveLink>
-      </div>
-    </nav>
+    <DeskTopNavbar />
   );
 }

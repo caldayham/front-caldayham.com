@@ -1,11 +1,35 @@
 .activeLink {
     border-bottom: 2px solid #fff;
+    color: #fff;
 }
 
 .dormantLink {
     border-bottom: 2px solid transparent;
+    transition: all 0.1s ease-in-out;
+    color: #bbb;
 }
 
 .dormantLink:hover {
  border-bottom: 2px solid #fff;
+ color: #fff;
+}
+
+.activeActionButton {
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.dormantActionButton {
+    transition: all 0.1s ease-in-out;
+
+    background-color: #bbb;
+    border-radius: 4px;
+    color: #111;
+}
+
+.dormankActionButton:hover {
+    background-color: #fff;
+    color: #fff;
 }

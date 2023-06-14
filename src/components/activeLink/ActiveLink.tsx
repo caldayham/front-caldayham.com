@@ -7,9 +7,10 @@ import styles from './activeLink.module.css';
 interface ActiveLinkProps {
   children: ReactNode;
   href: string;
+  linkType?: string;
 }
 
-const ActiveLink: React.FC<ActiveLinkProps> = ({ children, href }) => {
+const ActiveLink: React.FC<ActiveLinkProps> = ({ children, href, linkType }) => {
   const currentPathname = usePathname();
   const router = useRouter();
 
@@ -21,9 +22,15 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({ children, href }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick} className={isActive? styles.activeLink: styles.dormantLink}>
-      {children}
-    </a>
+    linkType === 'action' ? (
+      <a href={href} onClick={handleClick} className={isActive ? styles.activeActionButton : styles.dormantActionButton}>
+        {children}
+      </a>
+    ) : (
+      <a href={href} onClick={handleClick} className={isActive ? styles.activeLink : styles.dormantLink}>
+        {children}
+      </a>
+    )
   );
 };
 
