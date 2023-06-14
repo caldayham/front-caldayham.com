@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { MouseEvent, ReactNode } from 'react';
+import styles from './activeLink.module.css';
 
 interface ActiveLinkProps {
   children: ReactNode;
@@ -12,12 +13,7 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({ children, href }) => {
   const currentPathname = usePathname();
   const router = useRouter();
 
-  const isActive = currentPathname === `/${href}`;
-  console.log('currentPathname', currentPathname);
-  const style = {
-    marginRight: 10,
-    color: isActive ? 'red' : 'blue',
-  };
+  const isActive = currentPathname === href;
 
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -25,7 +21,7 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({ children, href }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick} style={style}>
+    <a href={href} onClick={handleClick} className={isActive? styles.activeLink: styles.dormantLink}>
       {children}
     </a>
   );

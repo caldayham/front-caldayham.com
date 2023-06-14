@@ -47,13 +47,12 @@ a {
   }
 }
 
-.pageContainer {
+.page {
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: left;
-  padding: 0 20px;
-  padding-top: 84px;
+  padding: 20px 20px;
   height: 100vh;
 }
 

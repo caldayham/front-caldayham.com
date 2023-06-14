@@ -1,8 +1,9 @@
-// Navbar.tsx
+'use client';
+
 import React from 'react';
 import pageLinks from "@/data/pageLinks";
 import styles from './navbar.module.css';
-import ActiveLink from '@/components/ActiveLink';
+import ActiveLink from '@/components/activeLink/ActiveLink';
 
 
 export default function Navbar() {

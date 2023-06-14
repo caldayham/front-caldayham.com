@@ -35,10 +35,6 @@
     color: #fff;
 }
 
-.link:hover {
-    border-bottom: 2px solid #fff;
-}
-
 .actionLink {
     padding: 2px 20px;
     background-color: #bbb;

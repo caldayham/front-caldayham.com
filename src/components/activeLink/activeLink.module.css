@@ -1,0 +1,11 @@
+.activeLink {
+    border-bottom: 2px solid #fff;
+}
+
+.dormantLink {
+    border-bottom: 2px solid transparent;
+}
+
+.dormantLink:hover {
+ border-bottom: 2px solid #fff;
+}
