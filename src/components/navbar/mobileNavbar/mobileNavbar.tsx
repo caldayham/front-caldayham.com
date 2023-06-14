@@ -3,7 +3,7 @@
 import React from 'react';
 import pageLinks from "@/data/pageLinks";
 import styles from './mobileNavbar.module.css';
-import ActiveLink from '@/components/activeLink/activeLink';
+import ActiveLink from '@/components/activeLinks/activeLinks';
 
 export default function MobilepNavbar() {
 

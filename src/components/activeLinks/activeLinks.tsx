@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { MouseEvent, ReactNode } from 'react';
-import styles from './activeLink.module.css';
+import styles from './activeLinks.module.css';
 
 interface ActiveLinkProps {
   children: ReactNode;
