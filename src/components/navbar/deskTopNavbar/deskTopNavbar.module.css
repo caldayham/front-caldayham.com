@@ -12,35 +12,6 @@
     background-color: #111;
 }
 
-.mobileContainer {
-    height: 84px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #333;
-    padding: 2% 2%; 
-    zIndex: 100;
-    position: sticky; /* Use sticky position */
-    top: 0; /* Will be stuck to the top when scrolling down */
-    width: 100%; /* Takes 100% of the parent width */
-    background-color: #111;
-    flex-direction: column;
-}
-
-.mobileTop {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.mobileLinks {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-
 .logo {
     display: flex;
     align-items: center;
@@ -53,7 +24,7 @@
 .links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .link {

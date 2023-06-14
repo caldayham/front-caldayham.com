@@ -9,7 +9,7 @@ export default function Navbar() {
 
   // function to check window size and update state accordingly
   const checkWindowSize = () => {
-    if (window.innerWidth < 640) {
+    if (window.innerWidth < 680) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
