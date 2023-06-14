@@ -5,15 +5,15 @@ import Image from 'next/image'
 
 export default function LandingPage() {
   return (
-    <div className='pageContainer'>
-      <div className={styles.mainSection}>
-        <div>
+    <div className={styles.container}>
+      <div className={styles.section}>
+        <div className={styles.item}>
           <h1>Hello, my name is Cal.</h1>
-          <h1 style={{marginBottom: '2rem'}}>Welcome to my site.</h1>
+          <h1 style={{ marginBottom: '2rem' }}>Welcome to my site.</h1>
           <p>The primary directive of this site is to serve as the primary source of information on myself, Cal!</p>
           <p>The main unit of information on this site are posts, essentially text and image documentation of any object that relates to myself and I want to make public.</p>
         </div>
-        <div>
+        <div className={styles.item}>
           <Image src='/images/2022-snapper-zoom.jpg' alt='cal x snapping turtle' width={200} height={320} />
         </div>
       </div>

@@ -1,30 +1,28 @@
-'use client';
-
-import Link from "next/link";
+// Navbar.tsx
 import React from 'react';
 import pageLinks from "@/data/pageLinks";
 import styles from './navbar.module.css';
+import ActiveLink from '@/components/ActiveLink';
+
 
 export default function Navbar() {
   return (
-    <div className={styles.container}>
-      <Link href={'/'} className={styles.logo}>
-        caldayham
-      </Link>
+    <nav className={styles.container}>
+      <ActiveLink href="/">
+        <div className={styles.logo}>caldayham</div>
+      </ActiveLink>
 
       <div className={styles.links}>
         {pageLinks.map((pageLink) => (
-
-          <Link href={pageLink.path} key={pageLink.id} className={styles.link}>
-            {pageLink.title}
-          </Link>
-
+          <ActiveLink href={pageLink.path} key={pageLink.id}>
+            <div className={styles.link}>{pageLink.title}</div>
+          </ActiveLink>
         ))}
 
-        <Link href={'/connect'} className={styles.actionLink}>
-          Connect
-        </Link>
+        <ActiveLink href="/connect">
+          <div className={styles.actionLink}>Connect</div>
+        </ActiveLink>
       </div>
-    </div>
-  )
+    </nav>
+  );
 }
