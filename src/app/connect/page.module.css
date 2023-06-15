@@ -4,29 +4,21 @@
     gap: 20px;
 }
 
-.form {
+.purchaseButton {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.submitButton {
-    margin-top: 20px;
-
-    padding: 2px 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 50px;
     background-color: #bbb;
     color: #111;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.1s ease;
-    border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.submitButton:hover {
+.purchaseButton:hover {
     background-color: #fff;
     color: #000;
 }

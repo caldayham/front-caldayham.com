@@ -1,0 +1,10 @@
+.socialIcons {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+}
+
+.icon {
+    cursor: pointer;
+    opacity: 0.8;
+}
