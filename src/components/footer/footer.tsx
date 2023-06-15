@@ -5,8 +5,6 @@ import socialAccounts from '@/data/socialAccounts'
 export default function Footer() {
   return (
     <div className={styles.container}>
-      <div>©2023 caldayham.com - all rights reserved.</div>
-
       <div className={styles.socialIcons}>
         {socialAccounts.map((socialAccount) => (
           <a key={socialAccount.id} href={socialAccount.link} className={styles.socialLink} target='_blank' rel="noopener noreferrer">
@@ -14,6 +12,8 @@ export default function Footer() {
           </a>
         ))}
       </div>
+      
+      <div>©2023 caldayham.com - all rights reserved.</div>
     </div>
   )
 }

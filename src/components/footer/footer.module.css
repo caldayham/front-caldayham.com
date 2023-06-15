@@ -1,19 +1,26 @@
 .container {
-    height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     border-top: 1px solid #333;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 .socialIcons {
     display: flex;
+    flex: 1;
     gap: 8px;
 }
 
 .icon {
     cursor: pointer;
     opacity: 0.8;
+}
+
+@media (max-width: 780px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
