@@ -5,8 +5,8 @@
     align-items: center;
     border-bottom: 1px solid #333;
     padding: 0 20px; 
-    zIndex: 100;
     position: sticky; /* Use sticky position */
+    z-index: 9999;
     top: 0; /* Will be stuck to the top when scrolling down */
     width: 100%; /* Takes 100% of the parent width */
     background-color: #111;

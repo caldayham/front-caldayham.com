@@ -6,7 +6,11 @@ export default function Footer() {
     <div className={styles.container}>
       <SocialIcons />
 
-      <p className={styles.copyright}>©2023 caldayham.com - all rights reserved.</p>
+      <div className={styles.legalContainer}>
+        <p className={styles.legal}>©2023 caldayham.com</p>
+        <span className={styles.dot}>&nbsp;•&nbsp;</span>
+        <p className={styles.legal}> all rights reserved.</p>
+      </div>
     </div>
   )
 }

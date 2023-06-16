@@ -2,6 +2,7 @@
     display: flex;
     flex: 1;
     gap: 8px;
+    z-index: 1;
 }
 
 .icon {
