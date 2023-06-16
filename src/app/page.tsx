@@ -25,7 +25,7 @@ export default function LandingPage() {
 
         <div className='lowerPageSection'>
           <h1 className={styles.title}>About Cal</h1>
-          <p>I absolutely love problem solving. To me, that seems to be a big component of purpose. I am 22 year old, Canadian by birth, straight white male.</p>
+          <p>I absolutely love problem solving. To me, that seems to be a big component of purpose. I am 22, Canadian by birth, California by choice (with many visits to home to Canada :), straight male.</p>
           <p>Some other things that I really enjoy are family / friends, being outside, weight lifting, animals, coding, building solutions, and finding new ways to organize various aspects of my being.</p>
           <p>I think a lot about entropy, ultimate purpose in existence, personal agency, and the severity of existence. I am very grateful to be.</p>
           <p>I am quite fortunate to have a wonderful family, great friends, healthy body, and clear mind. I have had my struggles, I am and will continue to have more, I am grateful for existence.</p>
