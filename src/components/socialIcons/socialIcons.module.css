@@ -1,8 +1,9 @@
 .socialIcons {
     display: flex;
     flex: 1;
-    gap: 8px;
-    z-index: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .icon {

@@ -4,6 +4,10 @@
     gap: 20px;
 }
 
+.socialsContainer {
+    max-width: 400px;
+}
+
 .purchaseButton {
     display: flex;
     justify-content: center;

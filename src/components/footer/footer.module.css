@@ -7,8 +7,14 @@
     padding: 20px 20px;
 }
 
+.socialsContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .legalContainer {
-    width: 100%;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -26,5 +32,8 @@
     .legalContainer {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .socialsContainer {
+        width: 100%;
     }
 }

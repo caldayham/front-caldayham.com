@@ -9,7 +9,9 @@ export default function ConnectPage() {
   return (
     <div className={styles.main}>
       <h1>Connect with Cal!</h1>
-      <SocialIcons />
+      <div className={styles.socialsContainer}>
+        <SocialIcons />
+      </div>
       <p>To connect with cal (via email, phone, or any other supported message) you must first submit something you find interesting.</p>
       <p>As the number of requests to connect increases, so will the bar for what is interesting enough. I absolutely love talking to new people, but I have the same 24 hours in my day you do and can't spend it all talking to people about things I don't find interesting when there are other things.</p>
       <h2>Steps</h2>
