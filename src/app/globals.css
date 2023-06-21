@@ -1,3 +1,28 @@
+:root {
+  /* Light theme colors */
+  --color-bg-light: #f2f2f2;
+  --color-text-light: #111;
+
+  /* Dark theme colors */
+  --color-bg-dark: #111;
+  --color-text-dark: #bbb;
+}
+
+.light-theme {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-text-active: black;
+  --color-bg-active: white;
+}
+
+.dark-theme {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-active: white;
+  --color-bg-active: black;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,8 +32,8 @@
 html,
 body {
   max-width: 100vw;
-  background-color: #111;
-  color: #bbb;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 a {
@@ -63,6 +88,12 @@ a {
   border-top: 1px solid #333;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.theme {
+  transition: 0.2s all ease;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 
