@@ -2,9 +2,9 @@
 
 export default function ErrorPage() {
     return (
-        <div className="pageContainer">
-            <h1>Error loading page</h1>
-            <p>Please see console for details or contact the dev team.</p>
-        </div>
+        <>
+            <h1>Error loading the projects page</h1>
+            <p>This is due to an error while fetching the project posts, please see console for details or contact the dev team.</p>
+        </>
     )
 };

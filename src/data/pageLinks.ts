@@ -3,13 +3,13 @@ import { Link } from "@/models/link.model";
 const pageLinks:Link[] = [
     {
         id: 1,
-        title: 'thoughts',
-        path: '/thoughts',
+        title: 'projects',
+        path: '/projects',
     },
     {
         id: 2,
-        title: 'projects',
-        path: '/projects',
+        title: 'thoughts',
+        path: '/thoughts',
     },
     {
         id: 3,

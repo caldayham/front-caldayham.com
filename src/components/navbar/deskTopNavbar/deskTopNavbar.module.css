@@ -10,6 +10,8 @@
     top: 0; /* Will be stuck to the top when scrolling down */
     width: 100%; /* Takes 100% of the parent width */
     background-color: var(--color-bg);
+
+    transition: var(--ease-transition);
 }
 
 .logo {

@@ -1,7 +1,14 @@
-.container {
+.postWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--ease-transition)
+}
+
+.postWrapper:hover {
+    background-color: var(--color-bg-active);
 }

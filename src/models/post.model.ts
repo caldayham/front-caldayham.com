@@ -1,15 +1,17 @@
 export class Post {
-    id: number;
+    path: string;
     title: string;
+    desc: string;
+    img: string;
     date: string;
-    content: string;
     tags: string[];
     
-    constructor(id: number, title: string, date: string, content: string, tags: string[]) {
-        this.id = id;
+    constructor(path: string, title: string, desc: string, img: string, date: string, tags: string[]) {
+        this.path = path;
         this.title = title;
+        this.desc = desc;
+        this.img = img;
         this.date = date;
-        this.content = content;
         this.tags = tags;
     }
 }
