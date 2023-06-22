@@ -13,7 +13,7 @@ export default function ConnectPage() {
         <SocialIcons />
       </div>
       <p>To connect with cal (via email, phone, or any other supported message) you must first submit something you find interesting.</p>
-      <p>As the number of requests to connect increases, so will the bar for what is interesting enough. I absolutely love talking to new people, but I have the same 24 hours in my day you do and can't spend it all talking to people about things I don't find interesting when there are other things.</p>
+      <p>As the number of requests to connect increases, so will the bar for what is interesting enough. I absolutely love talking to new people, but I have the same 24 hours in my day you do and can't spend it all talking to people about things I don't find interesting.</p>
       <h2>Steps</h2>
       <p>Fill out the form below, no links please, and then explain in less than 2048 characters, something you find interesting.</p>
       <p>I review all submissions and if I find it interesting I will reach out to you via your provided method.</p>
@@ -21,8 +21,8 @@ export default function ConnectPage() {
 
       <div className='lowerPageSection'>
         <h1>Want to meet with Cal?</h1>
-        <p>You can book a 30 minute video call for 100 USD or the current equivalent in bitcoin, maximum 2 / person / week.</p>
-        <p>For many people $100 is a non-trivial amount to spend on 30 minutes of time, if you find yourself in that bucket, don't purchase this.</p>
+        <p>You can book a 30 minute video call for 200 USD or the current equivalent in bitcoin, maximum 2 / person / week.</p>
+        <p>For many people $200 is a non-trivial amount to spend on 30 minutes of time, if you find yourself in that bucket, don't purchase this.</p>
         <p>That said, there are also many people who have a high time value and just want to quickly schedule a call, this product is for those people.</p>
         <MeetingCalendar />
         <div>
